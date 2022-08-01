@@ -4,4 +4,4 @@ version: 0.0.1
 vars:
   project:
     type: string
-    description: Your plugn name
+    description: Your plugin name

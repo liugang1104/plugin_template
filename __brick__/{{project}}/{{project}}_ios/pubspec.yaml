@@ -27,7 +27,7 @@ flutter:
   plugin:
     platforms:
       ios:
-        pluginClass: {{project}}Plugin
+        pluginClass: {{project.pascalCase()}}Plugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:

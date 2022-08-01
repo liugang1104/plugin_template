@@ -2,9 +2,11 @@ name: {{project}}
 description: A new flutter plugin project.
 version: 0.0.1
 homepage:
+publish_to: http://10.141.64.130:8080
+
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
+  sdk: ">=2.15.1 <3.0.0"
   flutter: ">=1.20.0"
 
 dependencies:
@@ -16,14 +18,6 @@ dependencies:
     path: ../{{project}}_android
   {{project}}_ios:
     path: ../{{project}}_ios
-  {{project}}_web:
-    path: ../{{project}}_web
-  {{project}}_macos:
-    path: ../{{project}}_macos
-  {{project}}_windows:
-    path: ../{{project}}_windows
-  {{project}}_linux:
-    path: ../{{project}}_linux
 
 dev_dependencies:
   flutter_test:
@@ -44,14 +38,6 @@ flutter:
         default_package: {{project}}_android
       ios:
         default_package: {{project}}_ios
-      web:
-        default_package: {{project}}_web
-      macos:
-        default_package: {{project}}_macos
-      windows:
-        default_package: {{project}}_windows
-      linux:
-        default_package: {{project}}_linux
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
