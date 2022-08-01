@@ -19,4 +19,6 @@ FLUTTER_DIR=$(which flutter)
 FLUTTER_BIN="${FLUTTER_DIR%/*}"
 DART_SDK="${FLUTTER_BIN}/cache/dart-sdk/bin/dart"
 $DART_SDK pub get -C "$WORKSPACE_DIR/ab_dsl_interpreter"
-$DART_SDK "$WORKSPACE_DIR/ab_dsl_interpreter/lib/ab_dsl_interpreter.dart" $PLUGIN_DIR $PLUGIN_NAME
+$DART_SDK "$WORKSPACE_DIR/ab_dsl_interpreter/lib/ab_dsl_interpreter.dart" "$PLUGIN_DIR" "$PLUGIN_NAME"
+
+rm -rf "$WORKSPACE_DIR"
