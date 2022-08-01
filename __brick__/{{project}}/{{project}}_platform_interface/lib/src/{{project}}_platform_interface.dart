@@ -16,7 +16,7 @@ abstract class {{project.pascalCase()}}Platform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> get platformVersion async {
-    throw UnimplementedError('platformVersion has not been implemented.');
+  Future<String?> getPlatformVersion() {
+    throw UnimplementedError('platformVersion() has not been implemented.');
   }
 }

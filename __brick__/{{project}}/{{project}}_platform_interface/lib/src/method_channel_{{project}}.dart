@@ -4,10 +4,10 @@ import '{{project}}_platform_interface.dart';
 
 class MethodChannel{{project.pascalCase()}} extends {{project.pascalCase()}}Platform {
   static const MethodChannel _channel =
-      const MethodChannel('{{project}}');
+      const MethodChannel('io.ambergroup.plugins/{{project}}');
 
   @override
-  Future<String?> get platformVersion async {
+  Future<String?> getPlatformVersion async {
     final String? version = await _channel.invokeMethod('getPlatformVersion');
     return version;
   }
