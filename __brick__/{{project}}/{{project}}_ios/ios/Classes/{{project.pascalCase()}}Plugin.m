@@ -20,4 +20,8 @@
     }
 }
 
+- (void)getPlatformVersion:(id)arguments result:(FlutterResult)result {
+    result([NSString stringWithFormat:@"iOS: %@", [[UIDevice currentDevice] systemVersion]]);
+}
+
 @end
