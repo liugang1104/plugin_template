@@ -1,20 +1,23 @@
+import 'package:flutter/material.dart';
 import 'dart:async';
 
-import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:{{project}}/{{project}}.dart';
+import 'package:my_device/my_device.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatefulWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
-  _MyAppState createState() => _MyAppState();
+  State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
   String _platformVersion = 'Unknown';
+  final _myDevicePlugin = MyDevice();
 
   @override
   void initState() {
@@ -28,8 +31,8 @@ class _MyAppState extends State<MyApp> {
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
-      platformVersion = await {{project.pascalCase()}}.getPlatformVersion() ??
-          'Unknown platform version';
+      platformVersion =
+          await _myDevicePlugin.getPlatformVersion() ?? 'Unknown platform version';
     } on PlatformException {
       platformVersion = 'Failed to get platform version.';
     }
