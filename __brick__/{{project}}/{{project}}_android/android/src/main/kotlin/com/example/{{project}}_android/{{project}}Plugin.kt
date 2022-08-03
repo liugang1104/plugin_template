@@ -17,7 +17,7 @@ class {{project}}Plugin: FlutterPlugin, MethodCallHandler {
   private lateinit var channel : MethodChannel
 
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
-    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "{{project}}")
+    channel = MethodChannel(flutterPluginBinding.binaryMessenger, "io.ambergroup.plugins/{{project}}")
     channel.setMethodCallHandler(this)
   }
 
