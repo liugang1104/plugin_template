@@ -18,6 +18,10 @@ void main() {
   });
 
   test('getPlatformVersion', () async {
-    expect(await {{project}}.platformVersion, '42');
+    expect(
+        await {
+          {pascalCase()}
+        }.getPlatformVersion(),
+        '42');
   });
 }
