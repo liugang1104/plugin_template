@@ -1,6 +1,6 @@
-# my_device_example
+# {{project}}_example
 
-Demonstrates how to use the my_device plugin.
+Demonstrates how to use the {{project}} plugin.
 
 ## Getting Started
 

@@ -102,7 +102,7 @@ packages:
       url: "http://10.141.64.130:8080"
     source: hosted
     version: "1.7.0"
-  my_device:
+  {{project}}:
     dependency: "direct main"
     description:
       path: ".."
