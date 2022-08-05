@@ -19,6 +19,6 @@ void main() {
 
   test('getPlatformVersion', () async {
     expect(
-        await {{project.pascalCase()}}.getPlatformVersion(), '42');
+        await {{project.pascalCase()}}().getPlatformVersion(), '42');
   });
 }
