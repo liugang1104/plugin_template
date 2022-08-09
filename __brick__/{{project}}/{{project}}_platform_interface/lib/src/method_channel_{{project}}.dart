@@ -7,8 +7,8 @@ class MethodChannel{{project.pascalCase()}} extends {{project.pascalCase()}}Plat
   MethodChannel('io.ambergroup.plugins/{{project}}');
 
   @override
-  Future<String> getPlatformVersion() async {
-    final String version = await _channel.invokeMethod('getPlatformVersion');
+  Future<String?> getPlatformVersion() async {
+    final version = await _channel.invokeMethod<String>('getPlatformVersion');
     return version;
   }
 }
