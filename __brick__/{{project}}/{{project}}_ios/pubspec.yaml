@@ -2,6 +2,7 @@ name: {{project}}_ios
 description: A new flutter plugin project.
 version: 0.0.1
 homepage:
+publish_to: http://10.141.64.130:8080
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
