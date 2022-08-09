@@ -5,12 +5,14 @@ homepage:
 publish_to: http://10.141.64.130:8080
 
 environment:
-  sdk: ">=2.12.0 <3.0.0"
-  flutter: ">=1.20.0"
+  sdk: ">=2.17.6 <3.0.0"
+  flutter: ">=2.5.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  {{project}}_platform_interface:
+  path: ../{{project}}_platform_interface
 
 dev_dependencies:
   flutter_test:
