@@ -12,7 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   {{project}}_platform_interface:
-  path: ../{{project}}_platform_interface
+    path: ../{{project}}_platform_interface
 
 dev_dependencies:
   flutter_test:
