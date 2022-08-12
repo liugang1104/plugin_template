@@ -30,8 +30,8 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.example.{{project}}_android
-        pluginClass: {{project}}Plugin
+        package: io.ambergroup.plugins.{{project}}_android
+        pluginClass: {{project.pascalCase()}}Plugin
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
