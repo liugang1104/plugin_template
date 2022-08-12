@@ -1,4 +1,4 @@
-package io.ambergroup.plugins.{{project}};
+package io.ambergroup.plugins.{{project}}_android;
 
 import androidx.annotation.NonNull;
 
